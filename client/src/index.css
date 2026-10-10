@@ -4,7 +4,7 @@
 
 :root {
   --bg: #eef0ee;
-  --panel: #eef1f0;
+  --panel: #edf1ef;
   --card: #f7f7f5;
   --card-2: #dfe5e1;
   --border: rgba(25, 35, 38, 0.18);
@@ -20,10 +20,10 @@
 }
 
 html, body, #root {
-  background: var(--bg);
-  min-height: 100vh;
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--text);
 }
 
@@ -42,14 +42,15 @@ button {
 .app-shell {
   min-height: 100vh;
   background: var(--bg);
-  padding-bottom: 96px;
+  padding-bottom: 112px;
 }
 
 .topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 26px 10px;
+  gap: 20px;
+  padding: 18px 26px 14px;
   background: rgba(255,255,255,0.08);
 }
 
@@ -71,11 +72,41 @@ button {
   color: #3d8e7f;
 }
 
-.sl {
-  font-size: 2.5rem;
+.slash {
+  font-size: 2.3rem;
   color: #2a2e31;
   margin-left: 8px;
   line-height: 1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.save-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(18, 25, 28, 0.15);
+  background: rgba(140, 204, 165, 0.26);
+  border-radius: 18px;
+  padding: 14px 20px;
+  min-height: 68px;
+  color: #173d34;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 18px rgba(57, 125, 99, 0.08);
+}
+
+.status-dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #62c387;
+  box-shadow: 0 0 0 3px rgba(98, 195, 135, 0.18);
 }
 
 .projects-button {
@@ -86,7 +117,7 @@ button {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #1f2a33;
 }
@@ -590,6 +621,35 @@ textarea {
   margin-top: 24px;
 }
 
+.feature-box {
+  margin-top: 24px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 18px;
+  border: 1px solid rgba(18, 24, 27, 0.12);
+  padding: 18px;
+}
+
+.feature-box h3 {
+  margin: 0 0 14px;
+  font-size: 1.7rem;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.feature-pill {
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 24, 27, 0.12);
+  background: rgba(63, 135, 110, 0.08);
+  color: #1b2c2a;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
 .backups-panel {
   margin-top: 28px;
   padding: 16px 18px;
@@ -630,6 +690,12 @@ textarea {
 @media (max-width: 900px) {
   .topbar {
     padding: 18px 16px 8px;
+    flex-wrap: wrap;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .projects-button {
@@ -668,3 +734,435 @@ textarea {
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
